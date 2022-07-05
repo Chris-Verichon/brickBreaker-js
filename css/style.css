@@ -5,7 +5,9 @@ body {
   text-align: center;
   font-family: monospace;
   color: rgba(255, 255, 255, 0.616);
-  background-color: rgba(1, 21, 51, 0.911);
+  
+  background: rgb(8,124,148);
+  background: radial-gradient(circle, rgba(8,124,148,1) 0%, rgba(4,43,59,1) 48%, rgba(6,44,88,1) 100%);
 }
 
 p {
