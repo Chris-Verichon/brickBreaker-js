@@ -32,3 +32,13 @@ let attempts = 5;
 let playerAttempts = attempts;
 let showEndingScreen = false;
 
+const updateMousePosition = (evt) => {
+  let rect = canvas.getBoundingClientRect();
+  let root = document.documentElement;
+
+  mouseX = evt.clientX - rect.left - root.scrollLeft;
+  mouseY = evt.clientY - rect.top - root.scrollTop;
+
+  paddleX = mouseX - (PADDLE_WIDTH/2);
+
+}
