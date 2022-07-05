@@ -42,3 +42,19 @@ const updateMousePosition = (evt) => {
   paddleX = mouseX - (PADDLE_WIDTH/2);
 
 }
+
+const handleMouseClick = (evt) => {
+  if(showEndingScreen) {
+    playerScore = 0;
+    maximumScore = 0;
+    playerAttempts = attempts;
+    brickReset();
+    ballReset();
+    showEndingScreen = false;
+  }
+
+  if(ballSpeedX == 0 && ballSpeedY == 0) {
+    ballSpeedX = 0;
+    ballSpeedY = -5;
+  }
+}
