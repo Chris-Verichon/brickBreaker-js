@@ -58,3 +58,17 @@ const handleMouseClick = (evt) => {
     ballSpeedY = -5;
   }
 }
+
+window.onload = function() {
+  canvas = document.getElementById('gameCanvas');
+  canvasContext = canvas.getContext('2d');
+
+  let framesPerSecond = 30;
+  setInterval(updateAll, 1000/framesPerSecond);
+
+  canvas.addEventListener('mousedown', handleMouseClick);
+
+  canvas.addEventListener('mousemove', updateMousePosition);
+
+  brickReset();
+}
