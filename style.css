@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.616);
+  background-color: rgba(1, 21, 51, 0.911);
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#gameCanvas {
+  margin: auto;
+  border-radius: 5px;
+}
